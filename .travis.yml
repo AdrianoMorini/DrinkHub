@@ -1,0 +1,10 @@
+language: java
+jdk:
+- openjdk8
+addons:
+    sonarcloud:
+        organization: probert0
+        token: a3ed75ae3c69d6ae7583ee3ac48101d8cea1e847
+script:
+- ant build
+- sonar-scanner
